@@ -15,7 +15,6 @@ void cleanup(va_list args, buffer_t *output)
 	write(1, output->start, output->len);
 	free_buffer(output);
 }
-
 /**
  * run_printf - Reads through the format string for _printf.
  * @format: Character string to print - may contain directives.
